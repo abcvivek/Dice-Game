@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pig Game</title>  <!-- Title of the websiite can be changed here  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <!-- important cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+ crossorigin="anonymous"></script>
+
+<style>
+
+.current-player-score-1,.current-player-score-2 {
+
+  background-color : rgb(220,0,50);
+  position : relative;
+  width : 35%;
+  height : 100px;
+  border-radius : 10px;
+}
+
+.player-score-1,.player-score-2 {
+
+  margin-bottom : 120px;
+}
+
+#operations button {
+  background-color : #eee;
+  border : none;
+  font-size : 16px;
+}
+
+#operations button:hover {
+  letter-spacing: 2px;
+  font-weight : 700;
+}
+
+.active {
+  color : rgb(10,180,50);
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<body style="background-image : linear-gradient(90deg,rgb(255,0,0),rgb(0,0,0));"> <!-- Background color of the website  can be changed here -->
+
+<div class="container">
+  <div>
+    <h1 style = "color : rgb(255,255,255);text-align : center;"><strong>PIG GAME</strong></h1>
+  </div>
+
+  <div class="jumbotron" style="text-align: center;margin-top : 30px;">
+    <div class="row">
+
+      <!-- first player pannel -->
+
+      <div class="col-sm-5">
+        
+        <div class="player-name-0 center-block" >
+
+          <h2 style="padding : 15px;" class="player-0 active"><strong>PLAYER 1</strong></h2>
+
+        </div>
+        <div class="player-score-1">
+
+          <h1 id="score-0"><strong>0</strong></h1>
+
+        </div>
+        <div class="current-player-score-1 center-block">
+
+          <h5 style="padding : 10px;padding-top : 20px;color : rgb(255,255,255);"><strong>Current</strong></h5>
+          <h3 style ="color : rgb(255,255,255);" class="current-score-0" ><strong>0</strong></h3>
+        </div>
+    </div>
+
+    <!-- end of first player pannel -->
+
+    <!-- opertions -->
+
+      <div class="col-sm-2" id="operations">
+
+        <button class="btn btn-default" id="new-game"><i class="fas fa-plus-circle"></i> NEW GAME</button>
+        <img src="" class="img img-responsive center-block dice" style="margin-top : 50px;box-shadow: 0 10px 40px  rgb(0,0,0);">
+
+        <div style="margin-top : 100px;">
+        <button class="btn btn-default" id="roll-dice" style="margin-bottom: 10px;" ><i class="fas fa-sync-alt"></i> ROLL DICE</button>
+        <button class="btn btn-default" id="hold"><i class="fas fa-pause-circle"></i> HOLD</button>
+        </div>
+      </div>
+
+      <!-- end of operations -->
+
+      <!-- second player pannel -->
+
+      <div class="col-sm-5">
+
+        <div class="player-name-1 center-block">
+
+          <h2 style="padding : 15px;" class="player-1"><strong>PLAYER 2</strong></h2>
+
+        </div>
+        <div class="player-score-2">
+
+          <h1 id="score-1"><strong>0</strong></h1>
+
+        </div>
+        <div class="current-player-score-2 center-block">
+
+          <h5 style="padding : 10px;padding-top : 20px;color : rgb(255,255,255);"><strong>Current</strong></h5>
+          <h3 style ="color : rgb(255,255,255);" class="current-score-1"><strong>0</strong></h3>
+          
+        </div>
+      </div>
+
+      <!-- end of second player pannel -->
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Crediting us is not mandatory.This footer section can be removed. -->
+
+<footer>
+	<h5 style="text-align: center;"><a href="https://www.ioscreen.in" style="color : rgb(255,255,255);"><strong>Designed by IO Screen</strong></a></h5>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
